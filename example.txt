@@ -1,0 +1,52 @@
+(echo Deploying Web App...
+
+rmdir /S /Q "C:\Users\Victus\OneDrive\Desktop\DevOps\deployed"
+mkdir "C:\Users\Victus\OneDrive\Desktop\DevOps\deployed"
+xcopy * "C:\Users\Victus\OneDrive\Desktop\DevOps\deployed" /E /Y /I)
+
+for exp1
+
+(
+    Deploying Web App...
+rm -rf /var/www/html/*
+cp -r * /var/www/html/
+
+)
+
+anyone in this for exp1
+
+
+(
+    docker rm --force container1
+docker build -t nginx-image1 .
+docker run -d -p 8081:80 --name=container1 nginx-image1
+
+)
+
+for exp6 docker
+
+(
+    npm install -g localtunnel
+    lt --port 8080
+)
+
+for webhook addition
+
+(
+    # Use official Apache HTTP Server image
+FROM httpd:2.4
+
+# Copy HTML file into the Apache web root directory
+COPY index.html /usr/local/apache2/htdocs/
+
+)
+
+for exp5 dockerfile
+
+docker build -t my-apache-server .
+
+docker run -p 8080:80 -d my-apache-server
+
+docker ps
+
+docker stop <container_id>
